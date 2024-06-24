@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 80px;
+}
+
+/* VARS */
+:root{
+  /* FONTES */
+  --arimo-font: "Arimo", sans-serif;
+  --cursive-font: "Leckerli One", cursive;
+  --bebas-font: "Bebas Neue", sans-serif;
+
+  /* CORES */
+  --branco: #fff;
+  --preto: #000;
+  --azul-tom1: #386064;
+  --azul-tom2: #1a3d3e;
+  --azul-tom3: #172d2e;
+  --azul-tom4: #051d18;
+  --amarelo: #fcd910;
+  
+}

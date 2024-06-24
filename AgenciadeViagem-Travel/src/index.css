@@ -1,0 +1,212 @@
+/* RESPONSIVIDADE */
+
+/* Dispositivos extragrandes (laptops e desktops grandes, 1201px e superiores) */
+@media only screen and (min-width: 1201px) {
+  #logo {
+    float: left;
+    width: 15%;
+    text-align: center;
+  }
+
+  #list ul {
+    float: right;
+    margin-left: 5%;
+  }
+
+  #list ul li {
+    display: inline-block;
+    margin: 5px 80px 0 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/* Dispositivos grandes (laptops/desktops, de 993px a 1200px) */
+@media only screen and (max-width: 1200px) {
+  #logo {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+
+  #list ul {
+    float: right;
+  }
+
+  #list ul li {
+    display: inline-block;
+    margin: 10px 60px 0 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+/* Dispositivos médios (tablets em paisagem, de 768px a 992px) */
+@media only screen and (max-width: 992px) {
+  #logo {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+
+  #list ul {
+    float: right;
+    margin-left: 50px;
+  }
+
+  #list ul li {
+    display: inline-block;
+    margin: 10px 20px 0 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #aboutImg {
+    display: none;
+  }
+
+  #aboutText {
+    float: none;
+    width: 100%;
+  }
+
+  #services .card {
+    width: 30%;
+  }
+
+  .contactUs {
+    width: 75%;
+  }
+
+  #price .card {
+    width: 30%;
+  }
+
+  .myfooter .card {
+    width: 33%;
+    margin-left: 0%;
+  }
+
+  .myfooter img {
+    height: 30px;
+    width: 30px;
+  }
+}
+/* Dispositivos pequenos (tablets retratos e telefones grandes, de 768px a 576px) */
+@media only screen and (max-width: 767px) {
+  header {
+    height: auto;
+  }
+
+  #logo {
+    margin-right: 100px;
+  }
+
+  #list ul {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #list ul li {
+    display: block;
+    margin: 0px;
+    text-align: left;
+  }
+
+  header a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #myicon1 {
+    height: 5px;
+    background-color: white;
+    margin-top: 20px;
+  }
+
+  #myicon2 {
+    height: 5px;
+    background-color: white;
+  }
+
+  #myicon3 {
+    height: 5px;
+    background-color: white;
+    margin-top: -10px;
+  }
+
+  .navbar-toggler:hover {
+    background-color: red;
+  }
+
+  #services .card {
+    width: 70%;
+  }
+
+  .contactUs {
+    width: 100%;
+  }
+
+  #price .card {
+    width: 70%;
+  }
+
+  .myfooter .card {
+    width: 70%;
+    margin-left: 0%;
+  }
+
+  .teamtext {
+    width: 70%;
+  }
+  .flint {
+    font-weight: 700;
+    color: #f94242;
+    letter-spacing: 0.3px;
+  }
+  .teamtext h4 {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+}
+
+/* Dispositivos extra smalls (telefones, de 575px pra baixo...) */
+@media only screen and (max-width: 575px) {
+  #slider {
+    min-height: 100vh;
+    text-align: center;
+  }
+  .navbar-brand {
+    padding-top: 0 !important;
+    font-size: 23px !important;
+  }
+  .navbar-brand h1 {
+    font-size: 35px !important;
+  }
+
+  #slidertext p {
+    padding: 5px;
+    font-size: 14px;
+  }
+  #slidertext {
+    width: 100%;
+    text-align: center;
+    margin: 90px auto 0px auto;
+  }
+}

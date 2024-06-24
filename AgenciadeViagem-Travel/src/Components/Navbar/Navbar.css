@@ -1,0 +1,436 @@
+/* NAVBAR */
+nav {
+  display: flex;
+  height: 68px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 15px;
+  background-color: var(--azul-tom2);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  z-index: 100;
+}
+
+.navbar_menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar_menu ul li {
+  margin-right: 20px;
+}
+
+.navbar_menu ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar_menu a {
+  color: var(--branco);
+  text-decoration: none;
+  position: relative;
+  font-family: var(--arimo-font);
+}
+
+.navbar_menu a:hover {
+  color: var(--branco);
+  transition: 0.4s ease;
+  box-shadow: 0 0 6px var(--azul-tom4);
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.navbar_menu a::after {
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  transition: width 0.9s ease;
+}
+
+nav ul li .active::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  margin-top: 20px;
+  height: 2px;
+  background-color: var(--azul-tom3);
+}
+
+.navbar_menu a:hover::after {
+  width: 100%;
+}
+
+.active {
+  font-weight: bold;
+}
+
+/* NAVBAR - RESTAURANTE (título) */
+a {
+  text-decoration: none;
+}
+
+/* NAVBAR - BOTÃO */
+.btn-signup {
+  padding: 6px;
+  width: 82px;
+  color: var(--preto);
+  background-color: var(--branco);
+  border: none;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  background-color: var(--branco);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--preto);
+  transition: ease 0.3s;
+}
+
+.btn a {
+  color: var(--preto);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+.btn:hover {
+  color: var(--branco) !important;
+  background-color: var(--azul-tom2);
+  text-decoration: none;
+  border: none;
+  transition: 0.4s ease;
+  box-shadow: 0 0 6px var(--azul-tom4);
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+/* MENU */
+nav .menu-btn i {
+  color: var(--branco) !important;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+
+/* NOME RESTAURANT */
+input[type="button"] {
+  display: none;
+}
+
+.btn-main {
+  display: flex;
+  gap: 30px;
+}
+
+.show {
+  display: none;
+}
+
+.navbar-brand h1 {
+  color: var(--branco);
+  font-size: 25px;
+  font-family: var(--cursive-font);
+  font-weight: 300;
+}
+
+.navbar-brand {
+  padding-bottom: 0 !important;
+  padding-top: 10px;
+}
+
+/* Modal CSS */
+body.active-modal {
+  overflow-y: hidden;
+  margin-right: 16px;
+}
+
+/* cheked */
+.in {
+  position: relative;
+  display: block !important;
+  cursor: pointer;
+  top: 13px;
+  right: 5px;
+}
+
+.modal {
+  margin: 20px !important;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 10000;
+  transition: 1s;
+}
+
+.overlay {
+  background-color: rgba(39, 39, 39, 0.8);
+}
+
+.modal {
+  display: inline;
+}
+
+.modal-content {
+  position: absolute;
+  height: 65vh;
+  transition: 1s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background-color: var(--branco);
+  padding: 14px 28px;
+  border-radius: 20px;
+  max-width: 600px;
+  min-width: 300px;
+  z-index: 10000000;
+}
+
+.modal-content h2 {
+  text-align: center;
+  color: var(--preto);
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.modal-content p {
+  text-align: center;
+  color: var(--azul-tom1);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.modal-content span p {
+  bottom: 13px;
+  position: relative;
+  color: #999999;
+  font-size: 8px;
+  padding: 3px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.modal-content span p label {
+  cursor: pointer;
+}
+
+.modal-content span {
+  position: relative;
+  top: 40px;
+}
+
+.h1-1 {
+  font-size: 35px;
+  margin-top: 0 !important;
+  font-family: var(--cursive-font);
+  margin-bottom: 10px;
+}
+
+.p-l-1 {
+  color: var(--azul-tom1) !important;
+  font-weight: 900 !important;
+  font-size: 12px !important;
+  bottom: 10px;
+  letter-spacing: 5px;
+  position: relative;
+}
+
+.inp {
+  left: 5%;
+  width: 90%;
+  font-size: 12px;
+  border-radius: 5px;
+  top: 25px;
+  padding: 10px;
+  height: 41px;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  border-top-right-radius: 20px;
+  top: 11px;
+  right: 0px;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  transform: translate(0%, -50%);
+  background-color: var(--azul-tom1);
+  margin-top: 10px;
+  width: 53px;
+  height: 44px;
+  text-decoration: none;
+  font-size: 28px;
+  color: var(--branco);
+}
+
+.btn-pr {
+  width: 96px;
+  height: 32px;
+  left: 40%;
+  top: 20px;
+  position: relative;
+  border: 2px solid var(--azul-tom1);
+  background-color: var(--azul-tom1);
+  color: var(--branco);
+  border-radius: 50px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 50px;
+}
+
+.btn-pr:hover {
+  background-color: var(--branco);
+  border: 2px solid var(--preto);
+  color: var(--preto);
+  transition: 0.4s;
+  font-weight: 600;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 1150px) {
+  nav {
+    padding: 0 40px 0 50px;
+  }
+
+  .navbar-brand {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  nav ul li a {
+    color: var(--branco);
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1150px) {
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: inline;
+  }
+
+  nav .menu-btn i {
+    top: 27px;
+    position: absolute;
+    right: 6%;
+    display: block;
+  }
+
+  #logo {
+    position: relative;
+    right: 2px;
+  }
+
+  #click:checked~.menu-btn i:before {
+    content: "\f00d";
+  }
+
+  nav {
+    padding: 17px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  nav ul {
+    position: absolute;
+    top: 69px;
+    left: -100%;
+    background: var(--azul-tom1);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    z-index: 100;
+  }
+
+  #click:checked~ul {
+    left: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 22px 0;
+  }
+
+  nav ul li {
+    margin-left: -100%;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  #click:checked~ul li {
+    margin-left: 0px;
+  }
+
+  nav ul li.active,
+  nav ul li:hover {
+    background: none;
+    color: var(--preto);
+  }
+
+  nav .logo {
+    display: block;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 744px) {
+  .modal-content span p {
+    font-size: 7px;
+  }
+
+  .btn-pr {
+    top: 42px;
+    left: 32%;
+  }
+
+  .inp {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .modal-content span p {
+    padding-left: 5px;
+  }
+
+  .modal {
+    margin: auto;
+    width: 90%;
+  }
+}

@@ -1,0 +1,48 @@
+/* HOME  */
+#slider {
+    color: var(--branco);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+    max-width: 120%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url('../../Images/inicio.png'); 
+    padding-top: 85px;
+    margin-top: -85px;
+}
+
+#sliderimg {
+    width: 40%;
+    height: 90vh;
+}
+
+#slidertext {
+    position: top;
+    width: 55%;
+    margin: 6% 0 3% 2%;
+    padding: 10px;
+}
+
+.intro-text{
+    font-family: var(--arimo-font);
+    margin-bottom: 10px;
+}
+
+.text-highlight-1, .text-highlight-2 {
+    font-size: 50px;
+    font-family: var(--bebas-title);
+    color: var(--amarelo);
+}
+
+.text-h1, .text-p {
+    font-size: 50px;
+    font-family: var(--bebas-font);
+}
+
+.p {
+    font-family: var(--arimo-font);
+    text-shadow: 1.5px 1px rgba(0, 0, 0, 0.6);
+    color: var(--amarelo);
+}
